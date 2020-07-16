@@ -1,5 +1,6 @@
 
-const hacer = require('./librerias/libreria')
+const recorre = require('../modulos/recorrido')
+const imprime = require('../modulos/imprimir')
 
 const hobis = [
     'Correr' ,
@@ -7,4 +8,7 @@ const hobis = [
     'caminar'
 ];
 
-hacer.recorreH(hobis)
+let algoParaImprimir = 'Algo que imprimimos desde la App'
+
+recorre.recorreH(hobis)
+imprime.imprimirAlgo(algoParaImprimir)
